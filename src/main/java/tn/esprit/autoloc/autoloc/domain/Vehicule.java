@@ -36,4 +36,8 @@ public class Vehicule {
     private StatutVehicule statut;
     @ManyToMany(fetch = FetchType.EAGER)
     List<Equipement> equipements = new ArrayList<>();
+    @OneToMany(mappedBy = "vehicule")
+    private List<Maintenance> maintenanceList = new ArrayList<>();
+    @OneToMany(mappedBy ="vehicule")
+    private List<Reservation>reservationList = new ArrayList<>();
 }
