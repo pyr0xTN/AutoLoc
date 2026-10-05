@@ -6,9 +6,9 @@ import tn.esprit.autoloc.autoloc.domain.Contrat;
 import java.util.List;
 
 public interface IContratService {
-    Contrat ajouterClient(Contrat contrat);
-    Contrat modifierClient(Contrat client);
-    Contrat afficherClientById(Long id);
-    List<Contrat> afficherAllClients();
-    void supprimerClient(Long id );
+    Contrat ajouterContrat(Contrat contrat);
+    Contrat modifierContrat(Contrat client);
+    Contrat afficherContratById(Long id);
+    List<Contrat> afficherAllContrat();
+    void supprimerContrat(Long id );
 }

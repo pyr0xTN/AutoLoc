@@ -9,29 +9,29 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class IContratServiceImp implements IContratService {
-    private ContratRepository contratRepository;
+    private final ContratRepository contratRepository;
     @Override
-    public Contrat ajouterClient(Contrat contrat) {
+    public Contrat ajouterContrat(Contrat contrat) {
         return contratRepository.save(contrat);
     }
 
     @Override
-    public Contrat modifierClient(Contrat client) {
+    public Contrat modifierContrat(Contrat client) {
         return contratRepository.save(client);
     }
 
     @Override
-    public Contrat afficherClientById(Long id) {
+    public Contrat afficherContratById(Long id) {
         return contratRepository.findById(id).orElse(null);
     }
 
     @Override
-    public List<Contrat> afficherAllClients() {
+    public List<Contrat> afficherAllContrat() {
         return contratRepository.findAll();
     }
 
     @Override
-    public void supprimerClient(Long id) {
+    public void supprimerContrat(Long id) {
         contratRepository.deleteById(id);
 
     }
