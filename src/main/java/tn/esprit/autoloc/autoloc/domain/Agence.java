@@ -28,5 +28,7 @@ public class Agence {
     @Column(nullable = false, length = 20)
     private String telephone;
     @OneToMany(mappedBy = "agence")
+    private List<Vehicule> Vehicules = new ArrayList();
+    @OneToMany(mappedBy = "agence1")
     private List<Employe> empolyeList = new ArrayList();
 }

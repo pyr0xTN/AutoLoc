@@ -16,6 +16,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class Vehicule {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
